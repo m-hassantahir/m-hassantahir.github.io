@@ -1,7 +1,8 @@
+---
 layout: page
 title: "Compsee"
 permalink: /project1
-
+---
 
 # Sales Tracking Dashboard for Compsee Ecommerce using Microsoft Power BI
 

@@ -1,6 +1,8 @@
+---
 layout: page
 title: "Power BI Dashboards for Project Performance and Work Hours Analysis"
 permalink: /project2
+---
 
 Power BI Dashboards for Project Performance and Work Hours Analysis
 
