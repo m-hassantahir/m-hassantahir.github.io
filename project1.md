@@ -4,7 +4,7 @@ title: "Compsee"
 permalink: /project1
 ---
 
-# Sales Tracking Dashboard for Compsee Ecommerce using Microsoft Power BI
+# <a href="https://github.com/m-hassantahir/Sales-Data-Analysis"> Sales Tracking Dashboard for Compsee Ecommerce using Microsoft Power BI</a>
 
 1. Importing the Compsee Ecommerce Data
 
