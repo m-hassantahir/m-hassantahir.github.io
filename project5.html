@@ -1,0 +1,60 @@
+---
+layout: page
+title: "Compsee"
+permalink: /project5
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thumbnail Hyperlink</title>
+    <style>
+        /* Tooltip styling */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .tooltip .tooltip-text {
+            visibility: hidden;
+            width: 140px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 150%; /* Position above text */
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .tooltip:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hyperlink with an image -->
+    <a href="https://m-hassantahir.github.io/project1" target="_blank">
+        <img src="image-12.png" alt="Thumbnail" width="200" height="150">
+    </a>
+
+    <!-- Tooltip text on hover -->
+    <p class="tooltip">
+        Hover over me
+        <span class="tooltip-text">
+            <h4>Tooltip Heading</h4>
+            <p>This is additional information</p>
+        </span>
+    </p>
+
+</body>
+</html>
