@@ -9,31 +9,41 @@ permalink: /project5
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thumbnail Hyperlink</title>
+    <title>Thumbnail Hyperlink with Tooltip</title>
     <style>
-        /* Tooltip styling */
+        /* Tooltip container */
         .tooltip {
             position: relative;
             display: inline-block;
             cursor: pointer;
         }
 
+        /* Hidden tooltip text */
         .tooltip .tooltip-text {
             visibility: hidden;
-            width: 140px;
+            width: 180px;
             background-color: black;
             color: #fff;
             text-align: center;
-            padding: 5px;
+            padding: 10px;
             border-radius: 5px;
             position: absolute;
-            bottom: 150%; /* Position above text */
+            bottom: 110%;
             left: 50%;
             transform: translateX(-50%);
             opacity: 0;
             transition: opacity 0.3s;
+            font-size: 14px;
+            white-space: nowrap;
         }
 
+        /* Style for heading and text inside tooltip */
+        .tooltip .tooltip-text h4,
+        .tooltip .tooltip-text p {
+            margin: 5px 0;
+        }
+
+        /* Show tooltip text only when hovering over the image */
         .tooltip:hover .tooltip-text {
             visibility: visible;
             opacity: 1;
@@ -42,19 +52,16 @@ permalink: /project5
 </head>
 <body>
 
-    <!-- Hyperlink with an image -->
-    <a href="https://m-hassantahir.github.io/project1" target="_blank">
-        <img src="image-12.png" alt="Thumbnail" width="200" height="150">
-    </a>
-
-    <!-- Tooltip text on hover -->
-    <p class="tooltip">
-        Hover over me
-        <span class="tooltip-text">
+    <!-- Image with tooltip -->
+    <div class="tooltip">
+        <a href="https://www.example.com" target="_blank">
+            <img src="thumbnail-image.jpg" alt="Thumbnail" width="200" height="150">
+        </a>
+        <div class="tooltip-text">
             <h4>Tooltip Heading</h4>
-            <p>This is additional information</p>
-        </span>
-    </p>
+            <p>This is additional information.</p>
+        </div>
+    </div>
 
 </body>
 </html>
