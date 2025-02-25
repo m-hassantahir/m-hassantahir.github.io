@@ -14,6 +14,7 @@ permalink: /project4/
     - [2.1 Data Overview](#21-data-overview)
     - [2.2 Tools and Technologies Used](#22-tools-and-technologies-used)
     - [2.3 Data Compilation Process](#23-data-compilation-process)
+  - [](#)
   - [3. Step 2: Data Transformation and Modeling](#3-step-2-data-transformation-and-modeling)
     - [3.1 Data Import into Power BI](#31-data-import-into-power-bi)
     - [3.2 Data Cleaning and Transformation](#32-data-cleaning-and-transformation)
@@ -95,7 +96,8 @@ To avoid causality issues, the `Dates Table`, `Facility Information Table`, and 
 - **Purpose**: Analyze patient visits based on geographical divisions and districts.
 - **Components**:
   - 8 Cards: Display metrics such as visits by district, division, etc.
-  - 2 Line Charts: Show trends in patient visits by district and division.
+  - 1 Line Charts: Show trends in patient visits by district and division.
+  - 1 map: Displays patient locations.
   - 1 Slicer: Allows filtering by division and district.
   - ![alt text](image-28.png)
 
