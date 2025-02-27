@@ -101,7 +101,7 @@ To avoid causality issues, the `Dates Table`, `Facility Information Table`, and 
   - 8 Cards: Display key metrics such as total visits, unique patients, etc.
   - 2 Line Charts: Show trends in patient visits over time.
   - 1 Slicer: Allows filtering by date.
-  - ![alt text](image-27.png)
+  - ![alt text](image-31.png)
 
 ### 4.2 Dashboard 2: Patient Visits by District and Division
 - **Purpose**: Analyze patient visits based on geographical divisions and districts.
