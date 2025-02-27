@@ -49,7 +49,7 @@ Two dashboards were developed to meet the client’s requirements:
 ### Line and Clustered Column Chart Dashboard: 
 This dashboard showcased the project’s overall S-curve. The x-axis represented dates, while the clustered column y-axis displayed variables such as "Early Period % Planned (Target)," "Period % Earned," and "Period % Forecast." The line y-axis included "Early Cumulative % Planned (Target)," "Late Cumulative % Planned (Target)," "Cumulative % Earned," and "Cumulative % Forecast." A date slicer allowed users to filter data dynamically.
 
-![alt text](image-30.png)
+![alt text](image-32.png)
 
 ### Work Hours and Employee Analysis Dashboard: 
 This dashboard included a line chart showing dates on the x-axis and the sum of hours on the y-axis. Additional cards displayed the number of employees in a category and their average sell rate. Three slicers were included for enhanced interactivity: one for company (four companies in total), one for the scope of work, and one for dates (with year, quarter, and month filters). 
