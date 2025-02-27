@@ -3,6 +3,7 @@ layout: page
 title: "Compsee"
 permalink: /project1
 ---
+
 <div style="width: 100%; max-width: 100%; overflow: hidden;">
     <iframe title="CompSee Sale Dashboard"
             src="https://app.powerbi.com/view?r=eyJrIjoiNjM2MDM5YzYtYjcxMC00NTFkLWFmNjMtOTgxNzc3YTNjNmZmIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"
@@ -11,9 +12,8 @@ permalink: /project1
             style="width: 100%; height: 75vh; border: none;">
     </iframe>
 </div>
-# Sales Tracking Dashboard for CompSee Ecommerce using Microsoft Power BI
 
-<a href="https://m-hassantahir.github.io/project1"> Click here to go to the github repository </a>
+# Sales Tracking Dashboard for CompSee Ecommerce using Microsoft Power BI
 
 ## Table of Contents
 
