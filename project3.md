@@ -5,7 +5,7 @@ permalink: /project3/
 ---
 
 <div style="width: 100%; max-width: 100%; overflow: hidden;">
-    <iframe title="Healthcare Delivery 3.0"
+    <iframe title="Toy Company - Performance Report"
             src="https://app.powerbi.com/view?r=eyJrIjoiYWU2ZmU3MTUtNTkwMi00M2UyLThkN2EtNDBkMWExNTRlMDlmIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"
             frameborder="0"
             allowFullScreen="true"

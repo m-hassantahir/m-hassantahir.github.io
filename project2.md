@@ -4,6 +4,24 @@ title: "Power BI Dashboards for Project Performance and Work Hours Analysis"
 permalink: /project2/
 ---
 
+<div style="width: 100%; max-width: 100%; overflow: hidden;">
+    <iframe title="Dashboard 1"
+            src="https://app.powerbi.com/view?r=eyJrIjoiZDQxMTc1NDItZjU4OC00ODAxLWFhMTUtZTUwZTA1Mjk5NThkIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"
+            frameborder="0"
+            allowFullScreen="true"
+            style="width: 100%; height: 75vh; border: none;">
+    </iframe>
+</div>
+
+<div style="width: 100%; max-width: 100%; overflow: hidden;">
+    <iframe title="Dashboard 2"
+            src="https://app.powerbi.com/view?r=eyJrIjoiOGZlZGU0NjgtMWYzOC00NDJkLTg3MDYtZWYwMmNlNTRjZDc3IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"
+            frameborder="0"
+            allowFullScreen="true"
+            style="width: 100%; height: 75vh; border: none;">
+    </iframe>
+</div>
+
 # Power BI Dashboards for Project Performance and Work Hours Analysis
 
 ## PROJECT DESCRIPTION:
