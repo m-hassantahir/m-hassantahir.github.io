@@ -11,7 +11,7 @@ permalink: /project1
 <a href="https://m-hassantahir.github.io/project1"> Click here to go to the github repository </a>
 
 <div style="width: 100%; max-width: 100%; overflow: hidden;">
-    <iframe title="Dashboard 1"
+    <iframe title="CompSee Sale Dashboard"
             src="https://app.powerbi.com/view?r=eyJrIjoiNjM2MDM5YzYtYjcxMC00NTFkLWFmNjMtOTgxNzc3YTNjNmZmIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"
             frameborder="0"
             allowFullScreen="true"
