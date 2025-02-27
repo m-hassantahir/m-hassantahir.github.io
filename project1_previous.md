@@ -4,130 +4,14 @@ title: "Compsee"
 permalink: /project1
 ---
 
-<style>
-/* Styles for header and navbar (copied from index.html) */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #111;
-    color: white;
-    margin: 0;
-    padding: 0;
-}
-.header {
-    background-color: black;
-    padding: 20px;
-    text-align: center;
-    font-size: 28px;
-    font-weight: bold;
-    color: #ff00ff;
-}
-.navbar {
-    display: flex;
-    background: white;
-    padding: 10px;
-    justify-content: center;
-}
-.navbar a {
-    text-decoration: none;
-    color: black;
-    padding: 10px 20px;
-    margin: 0 10px;
-    font-weight: bold;
-}
-.navbar a:hover {
-    color: #ff00ff;
-}
-
-/* Sidebar styling */
-.sidebar {
-    position: fixed;
-    left: -260px;
-    top: 0;
-    width: 250px;
-    height: 100%;
-    background-color: #222;
-    padding-top: 20px;
-    transition: left 0.3s;
-    overflow-y: auto;
-    z-index: 1000;
-}
-.sidebar.open {
-    left: 0;
-}
-.sidebar a {
-    padding: 10px 20px;
-    display: block;
-    color: white;
-    text-decoration: none;
-}
-.sidebar a:hover {
-    background-color: #555;
-}
-#sidebarToggle {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    background-color: #ff00ff;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    z-index: 1100;
-}
-
-/* Main content padding to avoid overlap */
-.main-content {
-    margin-left: 0;
-    transition: margin-left 0.3s;
-}
-.main-content.shift {
-    margin-left: 260px;
-}
-</style>
-
-<!-- Header and Navbar (copied from index.html) -->
-<div class="header">M. Hassan Tahir's Blog</div>
-<div class="navbar">
-    <a href="#">HOME</a>
-    <a href="https://m-hassantahir.github.io/About_Me">ABOUT ME</a>        
-    <a href="#">POWER BI PORTFOLIO</a>
-    <a href="#">CATEGORIES</a>
-    <a href="#">SESSIONIZE</a>
-    <a href="#">PRIVACY POLICY</a>
+<div style="width: 100%; max-width: 100%; overflow: hidden;">
+    <iframe title="CompSee Sale Dashboard"
+            src="https://app.powerbi.com/view?r=eyJrIjoiNjM2MDM5YzYtYjcxMC00NTFkLWFmNjMtOTgxNzc3YTNjNmZmIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"
+            frameborder="0"
+            allowFullScreen="true"
+            style="width: 100%; height: 75vh; border: none;">
+    </iframe>
 </div>
-
-<!-- Sidebar toggle button -->
-<button id="sidebarToggle">☰ TOC</button>
-
-<!-- Sidebar with Table of Contents -->
-<div class="sidebar" id="sidebar">
-    <a href="#sales-tracking-dashboard-for-compsee-ecommerce-using-microsoft-power-bi">Sales Tracking Dashboard</a>
-    <a href="#1-importing-the-compsee-ecommerce-data">1. Importing Data</a>
-    <a href="#2-data-cleaning-and-transformation-in-power-query">2. Data Cleaning</a>
-    <a href="#3-building-relationships-between-tables">3. Relationships</a>
-    <a href="#4-creating-the-dashboard">4. Creating Dashboard</a>
-    <a href="#5-customizing-the-dashboard">5. Customizing</a>
-    <a href="#6-sum-of-profit-by-sub-category">6. Profit by Sub-Category</a>
-    <a href="#7-sum-of-quantity-by-category">7. Quantity by Category</a>
-    <a href="#8-creating-cards-for-key-metrics">8. Key Metrics</a>
-    <a href="#9-creating-and-formatting-additional-charts">9. Additional Charts</a>
-    <a href="#10-adding-slicers">10. Slicers</a>
-    <a href="#11-final-adjustments-and-testing">11. Final Testing</a>
-    <a href="#12-final-outcome">12. Final Outcome</a>
-    <a href="#13-features-of-the-project">13. Features</a>
-    <a href="#14-skills-demonstrated">14. Skills</a>
-</div>
-
-<!-- Main content container to shift with sidebar -->
-<div class="main-content" id="mainContent">
-    <div style="width: 100%; max-width: 100%; overflow: hidden;">
-        <iframe title="CompSee Sale Dashboard"
-                src="https://app.powerbi.com/view?r=eyJrIjoiNjM2MDM5YzYtYjcxMC00NTFkLWFmNjMtOTgxNzc3YTNjNmZmIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"
-                frameborder="0"
-                allowFullScreen="true"
-                style="width: 100%; height: 75vh; border: none;">
-        </iframe>
-    </div>
 
 # Sales Tracking Dashboard for CompSee Ecommerce using Microsoft Power BI
 
@@ -496,14 +380,3 @@ Interpreting data trends and presenting actionable insights.
 ### 14.8 Attention to Detail:
 
 Ensured consistency in design and formatting across all dashboard elements.
-
-</div>
-
-<script>
-document.getElementById('sidebarToggle').onclick = function() {
-    const sidebar = document.getElementById('sidebar');
-    const mainContent = document.getElementById('mainContent');
-    sidebar.classList.toggle('open');
-    mainContent.classList.toggle('shift');
-}
-</script>
