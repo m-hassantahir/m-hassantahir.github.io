@@ -1,8 +1,17 @@
 ---
 layout: page
-title: "Power BI Dashboards for Project Performance and Work Hours Analysis"
+title: "Toy Company - Performance Report"
 permalink: /project3/
 ---
+
+<div style="width: 100%; max-width: 100%; overflow: hidden;">
+    <iframe title="Healthcare Delivery 3.0"
+            src="https://app.powerbi.com/view?r=eyJrIjoiYWU2ZmU3MTUtNTkwMi00M2UyLThkN2EtNDBkMWExNTRlMDlmIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"
+            frameborder="0"
+            allowFullScreen="true"
+            style="width: 100%; height: 75vh; border: none;">
+    </iframe>
+</div>
 
 # Designing a Data-Driven Power BI Dashboard
 
