@@ -46,19 +46,49 @@
             flex-wrap: wrap;
         }
         .post {
-            background: #222;
-            padding: 15px;
             width: 300px;
-            text-align: center;
-        }
-        .post img {
-            max-width: 100%;
-            height: auto;
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+            background-color: #222;
         }
         .post a {
             text-decoration: none;
-            color: #ff00ff;
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .post img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+        .post:hover img {
+            opacity: 0.5;
+        }
+        .post-text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            box-sizing: border-box;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .post:hover .post-text {
+            opacity: 1;
+        }
+        .post-text .title {
             font-weight: bold;
+            font-size: 16px;
+        }
+        .post-text .description {
+            font-size: 14px;
         }
     </style>
 </head>
@@ -76,23 +106,40 @@
         <h2>LATEST POSTS</h2>
         <div class="latest-posts">
             <div class="post">
-                <img src="image-12.png" alt="Post 1">
-                <p>Compsee Ecommerce - Sales Track Dashboard</p>
-                <a href="https://m-hassantahir.github.io/project1">ETL, Relationships, Dashboards</a>
+                <a href="https://m-hassantahir.github.io/project1">
+                    <img src="image-12.png" alt="Post 1">
+                    <div class="post-text">
+                        <div class="title">Compsee Ecommerce</div>
+                        <div class="description">Sales Track Dashboard - ETL, Relationships, Dashboards</div>
+                    </div>
+                </a>
             </div>
             <div class="post">
-                <img src="image-2.png" alt="Post 2">
-                <p>Project Performance and Work Hour Analysis</p>
-                <a href="https://m-hassantahir.github.io/project2">UnPivoting, Normalization, and Power Query</a>
-            </div>
-            <img src="image-9.png" alt="Post 3">
-                <p>Toy Store - Business Performance Dashboard</p>
-                <a href="https://m-hassantahir.github.io/project3">ETL, DAX, Mock Dashboard, Tooltips</a>
+                <a href="https://m-hassantahir.github.io/project2">
+                    <img src="image-2.png" alt="Post 2">
+                    <div class="post-text">
+                        <div class="title">Project Performance</div>
+                        <div class="description">Work Hour Analysis - UnPivoting, Normalization, Power Query</div>
+                    </div>
+                </a>
             </div>
             <div class="post">
-                <img src="image-28.png" alt="Post 4">
-                <p>Heathcare - Patients' Dashboard by Facilities</p>
-                <a href="https://m-hassantahir.github.io/project4">Data Cleaning, ETL, Relationships, Dashboards</a>
+                <a href="https://m-hassantahir.github.io/project3">
+                    <img src="image-9.png" alt="Post 3">
+                    <div class="post-text">
+                        <div class="title">Toy Store</div>
+                        <div class="description">Business Performance Dashboard - ETL, DAX, Mock Dashboard, Tooltips</div>
+                    </div>
+                </a>
+            </div>
+            <div class="post">
+                <a href="https://m-hassantahir.github.io/project4">
+                    <img src="image-28.png" alt="Post 4">
+                    <div class="post-text">
+                        <div class="title">Healthcare Dashboard</div>
+                        <div class="description">Patients' Dashboard - Data Cleaning, ETL, Relationships, Dashboards</div>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
