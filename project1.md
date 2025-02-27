@@ -13,6 +13,8 @@ permalink: /project1
     </iframe>
 </div>
 
+<iframe title="Sales Dashboard for CompSee" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNjM2MDM5YzYtYjcxMC00NTFkLWFmNjMtOTgxNzc3YTNjNmZmIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9" frameborder="0" allowFullScreen="true"></iframe>
+
 # Sales Tracking Dashboard for CompSee Ecommerce using Microsoft Power BI
 
 ## Table of Contents
