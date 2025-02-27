@@ -4,7 +4,15 @@ title: "Healthcare Dashboard"
 permalink: /project4/
 ---
 
-<iframe title="Healthcare Delivery 3.0" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiYWRiYjcxY2ItOWIyZC00OWNlLWI5NjEtYjZlYTA4MDY0Nzc0IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9" frameborder="0" allowFullScreen="true"></iframe>
+<div style="position: relative; width: 100%; padding-top: 62.25%; height: 0;">
+    <iframe title="Healthcare Delivery 3.0" 
+            src="https://app.powerbi.com/view?r=eyJrIjoiYWRiYjcxY2ItOWIyZC00OWNlLWI5NjEtYjZlYTA4MDY0Nzc0IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9" 
+            frameborder="0" 
+            allowFullScreen="true"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+    </iframe>
+</div>
+
 
 # Data Compilation, Transformation, and Visualization Report
 
