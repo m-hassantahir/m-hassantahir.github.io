@@ -13,7 +13,6 @@ permalink: /project1
     </iframe>
 </div>
 
-
 # Sales Tracking Dashboard for CompSee Ecommerce using Microsoft Power BI
 
 ## Table of Contents
