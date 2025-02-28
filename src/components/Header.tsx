@@ -27,8 +27,8 @@ const Header = () => {
   ];
 
   const socialLinks = [
-    { icon: <Github size={20} />, href: 'https://github.com', label: 'GitHub' },
-    { icon: <Linkedin size={20} />, href: 'https://linkedin.com', label: 'LinkedIn' },
+    { icon: <Github size={20} />, href: 'https://github.com/m-hassantahir/', label: 'GitHub' },
+    { icon: <Linkedin size={20} />, href: 'https://www.linkedin.com/in/mhassantahir1987/', label: 'LinkedIn' },
     { icon: <BarChart2 size={20} />, href: 'https://powerbi.microsoft.com', label: 'Power BI' },
   ];
 

@@ -27,7 +27,7 @@ const About = () => {
 
           <div>
             <h3 className="text-2xl font-bold text-slate-900 mb-4">
-              Data-Driven Insights Specialist
+              Data Analyst and Power BI Specialist
             </h3>
             <p className="text-slate-600 mb-6">
               I'm a detail-oriented data analyst with over 5 years of experience transforming complex datasets into actionable business insights. My expertise lies in creating interactive dashboards, performing statistical analysis, and developing data-driven solutions that help organizations make informed decisions.
