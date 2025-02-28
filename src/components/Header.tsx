@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Github, Linkedin, Twitter } from 'lucide-react';
+import { Menu, X, Github, Linkedin, BarChart2 } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,15 +29,15 @@ const Header = () => {
   const socialLinks = [
     { icon: <Github size={20} />, href: 'https://github.com', label: 'GitHub' },
     { icon: <Linkedin size={20} />, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: <Twitter size={20} />, href: 'https://twitter.com', label: 'Twitter' },
+    { icon: <BarChart2 size={20} />, href: 'https://powerbi.microsoft.com', label: 'Power BI' },
   ];
 
   return (
     <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-sm shadow-sm' : 'bg-transparent'}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <a href="#home" className="text-2xl font-bold tracking-tight text-indigo-600">
-            Portfolio
+          <a href="#home" className="text-2xl font-bold tracking-tight text-blue-600">
+            Data<span className="text-slate-700">Analyst</span>
           </a>
 
           {/* Desktop Navigation */}
@@ -47,21 +47,21 @@ const Header = () => {
                 <li key={link.name}>
                   <a 
                     href={link.href} 
-                    className="text-gray-600 hover:text-indigo-600 font-medium transition-colors"
+                    className="text-slate-600 hover:text-blue-600 font-medium transition-colors"
                   >
                     {link.name}
                   </a>
                 </li>
               ))}
             </ul>
-            <div className="flex items-center space-x-4 border-l pl-6 border-gray-200">
+            <div className="flex items-center space-x-4 border-l pl-6 border-slate-200">
               {socialLinks.map((link) => (
                 <a 
                   key={link.label}
                   href={link.href} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-gray-500 hover:text-indigo-600 transition-colors"
+                  className="text-slate-500 hover:text-blue-600 transition-colors"
                   aria-label={link.label}
                 >
                   {link.icon}
@@ -72,7 +72,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button 
-            className="md:hidden text-gray-500 hover:text-indigo-600 focus:outline-none" 
+            className="md:hidden text-slate-500 hover:text-blue-600 focus:outline-none" 
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >
@@ -83,14 +83,14 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100">
+        <div className="md:hidden bg-white border-t border-slate-100">
           <div className="container mx-auto px-4 py-3">
             <ul className="space-y-3 py-3">
               {navLinks.map((link) => (
                 <li key={link.name}>
                   <a 
                     href={link.href} 
-                    className="block py-2 text-gray-600 hover:text-indigo-600 font-medium"
+                    className="block py-2 text-slate-600 hover:text-blue-600 font-medium"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {link.name}
@@ -98,14 +98,14 @@ const Header = () => {
                 </li>
               ))}
             </ul>
-            <div className="flex items-center space-x-5 pt-4 border-t border-gray-100 mt-2">
+            <div className="flex items-center space-x-5 pt-4 border-t border-slate-100 mt-2">
               {socialLinks.map((link) => (
                 <a 
                   key={link.label}
                   href={link.href} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-gray-500 hover:text-indigo-600 transition-colors"
+                  className="text-slate-500 hover:text-blue-600 transition-colors"
                   aria-label={link.label}
                 >
                   {link.icon}
