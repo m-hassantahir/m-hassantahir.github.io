@@ -1,4 +1,3 @@
-import React from 'react';
 import { Heart, BarChart2, Database, Code, FileSpreadsheet } from 'lucide-react';
 
 const Footer = () => {
