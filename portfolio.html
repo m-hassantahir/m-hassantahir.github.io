@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Data Analyst & Power BI Specialist</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">Data Portfolio</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="portfolio.html" class="active">My Portfolio</a>
+                <a href="index.html#contact" class="contact-btn">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="portfolio-header">
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <p>Explore my data analysis and Power BI projects</p>
+        </div>
+    </section>
+
+    <section class="portfolio-grid">
+        <div class="container">
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="powerbi">Power BI</button>
+                <button class="filter-btn" data-filter="analysis">Data Analysis</button>
+                <button class="filter-btn" data-filter="visualization">Data Visualization</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project cards will be dynamically populated -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://yourpersonalsite.com" target="_blank"><i class="fas fa-globe"></i></a>
+                </div>
+                <p>&copy; 2025 - All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple filtering functionality
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                // Filter logic would go here
+                const filter = button.getAttribute('data-filter');
+                // You would then show/hide projects based on the filter
+            });
+        });
+    </script>
+</body>
+</html>
