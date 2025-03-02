@@ -48,45 +48,204 @@
         <div class="container mx-auto px-4">
             <header class="max-w-3xl mx-auto mb-12">
                 <h1 class="text-4xl font-bold text-gray-900 mb-4">Toy Store Performance Analysis</h1>
-                <p class="text-gray-600">February 15, 2025</p>
+                <p class="text-gray-600">May 27, 2024</p>
             </header>
 
             <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
                 <div class="p-8">
                     <div class="powerbi-container mb-12">
+                        <img src="../assets/images/projects/project3_toystore.png" alt="Toy Store Analysis Dashboard Thumbnail" class="w-full rounded-lg shadow-lg mb-6">
                         <iframe title="Toy Store Analysis Dashboard" width="100%" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiZDQxMTc1NDItZjU4OC00ODAxLWFhMTUtZTUwZTA1Mjk5NThkIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9" frameborder="0" allowFullScreen="true"></iframe>
                     </div>
 
                     <section class="space-y-8">
                         <div>
                             <h2 class="text-2xl font-semibold text-gray-900 mb-4">Project Overview</h2>
-                            <p class="text-gray-600">This comprehensive financial analysis dashboard provides deep insights into toy store performance, sales trends, and inventory management, enabling data-driven decision making for business growth.</p>
+                            <div class="text-gray-600 space-y-4">
+                                <p>This project involved designing a data-driven Power BI dashboard for a toy company to analyze business performance across sales, product, and store insights. The goal was to transform raw business data into interactive visualizations that aid decision-making. The dashboard consists of four pages:</p>
+                                <ol class="list-decimal list-inside space-y-2 ml-4">
+                                    <li>Sales Performance: High-level overview of sales metrics, trends, and comparisons.</li>
+                                    <li>Product Performance: Analysis of individual product performance in terms of sales, revenue, and profitability.</li>
+                                    <li>Store Performance: Visualization of store-level performance, including revenue, YoY differences, and inventory.</li>
+                                    <li>Tooltip Page: Additional contextual information displayed interactively across the dashboard.</li>
+                                </ol>
+                                <p>The project covered the entire process from data preparation to dashboard design, including ETL processes, DAX measures, and interactive visualizations.</p>
+                            </div>
                         </div>
 
                         <div>
                             <h2 class="text-2xl font-semibold text-gray-900 mb-4">Key Features</h2>
-                            <ul class="list-disc list-inside text-gray-600 space-y-2">
-                                <li>Sales performance tracking</li>
-                                <li>Inventory turnover analysis</li>
-                                <li>Seasonal trend forecasting</li>
-                                <li>Product category insights</li>
-                                <li>Customer purchase patterns</li>
-                            </ul>
+                            <div class="text-gray-600">
+                                <ol class="list-decimal list-inside space-y-3">
+                                    <li><span class="font-semibold">Interactive Dashboards:</span> Four pages with dynamic visualizations for sales, product, and store performance.</li>
+                                    <li><span class="font-semibold">Custom Layout and Design:</span> Designed in PowerPoint, imported into Power BI, with a consistent color palette and branding.</li>
+                                    <li><span class="font-semibold">Advanced DAX Measures:</span> Created complex calculations like YTD Revenue, YoY Difference, Running Total Revenue, and Progress Towards Goal.</li>
+                                    <li><span class="font-semibold">Data Visualizations:</span> Used line charts, bar charts, matrices, maps, and cards to display key metrics.</li>
+                                    <li><span class="font-semibold">Tooltips:</span> Custom tooltips for additional context when hovering over visuals.</li>
+                                    <li><span class="font-semibold">Conditional Formatting:</span> Applied to highlight key metrics and improve readability.</li>
+                                    <li><span class="font-semibold">Responsive Design:</span> Ensured the dashboard is interactive and works seamlessly across devices.</li>
+                                    <li><span class="font-semibold">Data Modeling:</span> Established relationships between tables (e.g., Sales, Product, Store, Dates) for accurate analysis.</li>
+                                </ol>
+                            </div>
                         </div>
 
                         <div>
                             <h2 class="text-2xl font-semibold text-gray-900 mb-4">Technical Details</h2>
-                            <ul class="list-disc list-inside text-gray-600 space-y-2">
-                                <li>Data Sources: SQL Server, Excel files</li>
-                                <li>ETL Process: Power Query</li>
-                                <li>Visualization: Power BI</li>
-                                <li>Refresh Rate: Daily</li>
-                            </ul>
+                            <div class="text-gray-600 space-y-6">
+                                <div>
+                                    <h3 class="font-semibold mb-2">1. Data Preparation:</h3>
+                                    <ul class="list-disc list-inside ml-4 space-y-2">
+                                        <li>Data Sources: Five main tables (Dates, Sales, Store, Product, Inventory).</li>
+                                        <li>ETL Process: Used Power Query Editor to clean, transform, and merge data.</li>
+                                        <li>Data Modeling: Created relationships between tables (e.g., Dates ↔ Sales, Product ↔ Sales).</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold mb-2">2. DAX Measures:</h3>
+                                    <ul class="list-disc list-inside ml-4 space-y-2">
+                                        <li>Basic Measures: Total Revenue, Cost, Units Sold, Profit.</li>
+                                        <li>Advanced Measures: YTD Revenue, Previous YTD Revenue, YoY Difference, Running Total Revenue, Progress Towards Goal.</li>
+                                        <li>Custom Columns: Profit Margin, Revenue Per Unit.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold mb-2">3. Visualizations:</h3>
+                                    <ul class="list-disc list-inside ml-4 space-y-2">
+                                        <li>Line Charts: Revenue trends over time.</li>
+                                        <li>Bar Charts: YoY comparisons by product and store.</li>
+                                        <li>Matrix: Tabular data for YTD Revenue, YTD Profit, and YoY Difference.</li>
+                                        <li>Maps: Geographic representation of store performance.</li>
+                                        <li>Cards: Key metrics like Revenue, Profit, and Goal Progress.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold mb-2">4. Design and Layout:</h3>
+                                    <ul class="list-disc list-inside ml-4 space-y-2">
+                                        <li>Custom Themes: Imported color palettes and layouts from PowerPoint.</li>
+                                        <li>Background Design: High-quality SVG files for consistent branding.</li>
+                                        <li>Tooltips: Customized to display additional information interactively.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold mb-2">5. Interactivity:</h3>
+                                    <ul class="list-disc list-inside ml-4 space-y-2">
+                                        <li>Filters and Slicers: Enabled dynamic filtering by time, product, and store.</li>
+                                        <li>Dynamic Measures: Data updates based on user interactions.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Skills</h2>
+                            <div class="text-gray-600 space-y-6">
+                                <div class="space-y-4">
+                                    <div>
+                                        <h3 class="font-semibold mb-2">1. Data Import and ETL:</h3>
+                                        <ul class="list-disc list-inside ml-4">
+                                            <li>Proficient in using Power Query Editor for data cleaning, transformation, and merging.</li>
+                                            <li>Example: Filtered and merged data from multiple tables (Sales, Product, Store).</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold mb-2">2. DAX (Data Analysis Expressions):</h3>
+                                        <ul class="list-disc list-inside ml-4">
+                                            <li>Created complex measures like YTD Revenue, YoY Difference, and Running Total Revenue.</li>
+                                            <li>Example: Used TOTALYTD and SAMEPERIODLASTYEAR for advanced time-based calculations.</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold mb-2">3. Data Modeling and Relationships:</h3>
+                                        <ul class="list-disc list-inside ml-4">
+                                            <li>Established relationships between tables for accurate data analysis.</li>
+                                            <li>Example: Connected Dates table to Sales table for date-based filtering.</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold mb-2">4. Data Visualization:</h3>
+                                        <ul class="list-disc list-inside ml-4">
+                                            <li>Designed interactive dashboards using line charts, bar charts, matrices, and maps.</li>
+                                            <li>Example: Created a map to visualize store performance geographically.</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold mb-2">5. Conditional Formatting:</h3>
+                                        <ul class="list-disc list-inside ml-4">
+                                            <li>Applied custom formatting to highlight key metrics.</li>
+                                            <li>Example: Used color scales in bar charts to emphasize high and low performers.</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold mb-2">6. Custom Theme and Layout Design:</h3>
+                                        <ul class="list-disc list-inside ml-4">
+                                            <li>Designed layouts in PowerPoint and imported them into Power BI.</li>
+                                            <li>Example: Created a custom color palette and background design for consistent branding.</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold mb-2">7. Dashboard Interactivity:</h3>
+                                        <ul class="list-disc list-inside ml-4">
+                                            <li>Added slicers, filters, and tooltips for user-friendly exploration.</li>
+                                            <li>Example: Enabled dynamic filtering by product category and store location.</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold mb-2">8. Advanced Analytics:</h3>
+                                        <ul class="list-disc list-inside ml-4">
+                                            <li>Performed YoY comparisons and revenue forecasting.</li>
+                                            <li>Example: Calculated YoY Difference to compare current and previous year performance.</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold mb-2">9. Report Structuring and Documentation:</h3>
+                                        <ul class="list-disc list-inside ml-4">
+                                            <li>Created a comprehensive report with clear objectives and detailed explanations.</li>
+                                            <li>Example: Documented each DAX measure and visualization for easy understanding.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <div>
                             <h2 class="text-2xl font-semibold text-gray-900 mb-4">Impact</h2>
-                            <p class="text-gray-600">Implementation of this analysis has led to a 20% increase in inventory efficiency and 15% growth in sales through optimized stock management and targeted marketing strategies.</p>
+                            <div class="text-gray-600 space-y-6">
+                                <div>
+                                    <h3 class="font-semibold mb-2">1. Improved Decision-Making:</h3>
+                                    <ul class="list-disc list-inside ml-4">
+                                        <li>The dashboard provided actionable insights into sales, product, and store performance, enabling stakeholders to make data-driven decisions.</li>
+                                        <li>Example: Identified top-performing products and underperforming stores for targeted interventions.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold mb-2">2. Enhanced Data Accessibility:</h3>
+                                    <ul class="list-disc list-inside ml-4">
+                                        <li>Interactive visualizations made complex data easy to understand for non-technical users.</li>
+                                        <li>Example: Tooltips provided additional context without cluttering the main visuals.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold mb-2">3. Time Efficiency:</h3>
+                                    <ul class="list-disc list-inside ml-4">
+                                        <li>Automated data preparation and visualization reduced manual effort and improved reporting speed.</li>
+                                        <li>Example: YTD and YoY calculations were automated, eliminating the need for manual updates.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold mb-2">4. Consistent Branding:</h3>
+                                    <ul class="list-disc list-inside ml-4">
+                                        <li>Custom themes and layouts ensured the dashboard aligned with the company's branding.</li>
+                                        <li>Example: Imported company colors and logos for a professional look.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold mb-2">5. Scalability:</h3>
+                                    <ul class="list-disc list-inside ml-4">
+                                        <li>The dashboard was designed to handle additional data and metrics as the business grows.</li>
+                                        <li>Example: Dynamic measures and filters allowed for easy expansion of the dataset.</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </section>
                 </div>

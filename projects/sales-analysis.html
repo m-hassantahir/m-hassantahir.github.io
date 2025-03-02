@@ -48,45 +48,202 @@
         <div class="container mx-auto px-4">
             <header class="max-w-3xl mx-auto mb-12">
                 <h1 class="text-4xl font-bold text-gray-900 mb-4">Sales Performance Dashboard</h1>
-                <p class="text-gray-600">February 15, 2025</p>
+                <p class="text-gray-600">January 25, 2024</p>
             </header>
 
             <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
                 <div class="p-8">
                     <div class="powerbi-container mb-12">
+                        <img src="../assets/images/projects/project1_compsee.png" alt="Sales Analysis Dashboard Thumbnail" class="w-full rounded-lg shadow-lg mb-6">
                         <iframe title="Sales Performance Dashboard" width="100%" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiNjM2MDM5YzYtYjcxMC00NTFkLWFmNjMtOTgxNzc3YTNjNmZmIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9" frameborder="0" allowFullScreen="true"></iframe>
                     </div>
 
                     <section class="space-y-8">
                         <div>
-                            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Project Overview</h2>
-                            <p class="text-gray-600">This interactive Power BI dashboard provides a comprehensive analysis of our sales performance across different regions. The dashboard combines data from multiple sources to create actionable insights for stakeholders.</p>
+                            <h2 class="text-2xl font-semibold text-gray-900 mb-4">1. Project Overview</h2>
+                            <div class="text-gray-600 space-y-4">
+                                <div>
+                                    <h3 class="font-semibold mb-2">Description:</h3>
+                                    <p>This project involved creating a Sales Tracking Dashboard for Compsee Ecommerce using Microsoft Power BI. The goal was to provide actionable insights into the company's sales performance by visualizing key metrics, trends, and patterns. The dashboard is interactive, allowing users to explore data dynamically using filters and slicers. It includes a variety of visualizations such as column charts, pie charts, and bar charts, along with key metrics displayed via cards.</p>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold mb-2">Purpose:</h3>
+                                    <p>The dashboard was designed to help Compsee Ecommerce monitor sales performance, identify trends, and make data-driven decisions. It provides a comprehensive view of sales data, including profit by month, quantity by category, and top-performing customers.</p>
+                                </div>
+                            </div>
                         </div>
 
                         <div>
-                            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Key Features</h2>
-                            <ul class="list-disc list-inside text-gray-600 space-y-2">
-                                <li>Real-time sales tracking by region</li>
-                                <li>Product performance analysis</li>
-                                <li>Customer segmentation insights</li>
-                                <li>Year-over-year comparison</li>
-                                <li>Profit margin analysis</li>
-                            </ul>
+                            <h2 class="text-2xl font-semibold text-gray-900 mb-4">2. Key Features</h2>
+                            <div class="text-gray-600 space-y-4">
+                                <ol class="list-decimal list-inside space-y-4">
+                                    <li class="font-semibold">Interactive Visualizations:
+                                        <ul class="list-disc list-inside ml-6 mt-2 font-normal">
+                                            <li>Column Charts: To visualize profit trends over time.</li>
+                                            <li>Pie Charts: To show the distribution of quantities by category and payment modes.</li>
+                                            <li>Stacked Bar Charts: To display profit contributions by sub-category and top customers.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="font-semibold">Dynamic Filters:
+                                        <ul class="list-disc list-inside ml-6 mt-2 font-normal">
+                                            <li>Quarter Filter: Allows users to filter data by quarter.</li>
+                                            <li>State-Based Filter: Enables filtering by state for regional analysis.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="font-semibold">Key Metrics Display:
+                                        <ul class="list-disc list-inside ml-6 mt-2 font-normal">
+                                            <li>Cards: Displaying Total Amount, Quantity, Profit, and Average Order Value (AOV).</li>
+                                        </ul>
+                                    </li>
+                                    <li class="font-semibold">Conditional Formatting:
+                                        <ul class="list-disc list-inside ml-6 mt-2 font-normal">
+                                            <li>Applied to highlight positive and negative values, making it easier to interpret data at a glance.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="font-semibold">Custom Metrics:
+                                        <ul class="list-disc list-inside ml-6 mt-2 font-normal">
+                                            <li>Average Order Value (AOV): Calculated as Amount divided by Quantity.</li>
+                                            <li>Top N Filters: Used to highlight top-performing categories, customers, and statuses.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="font-semibold">Polished Layout:
+                                        <ul class="list-disc list-inside ml-6 mt-2 font-normal">
+                                            <li>A professional and cohesive design with consistent formatting and styling.</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </div>
                         </div>
 
                         <div>
-                            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Technical Details</h2>
-                            <ul class="list-disc list-inside text-gray-600 space-y-2">
-                                <li>Data Sources: SQL Server, Excel files</li>
-                                <li>ETL Process: Power Query</li>
-                                <li>Visualization: Power BI</li>
-                                <li>Refresh Rate: Daily</li>
-                            </ul>
+                            <h2 class="text-2xl font-semibold text-gray-900 mb-4">3. Technical Details</h2>
+                            <div class="text-gray-600 space-y-4">
+                                <p>The project involved the following technical steps:</p>
+                                <ol class="list-decimal list-inside space-y-4">
+                                    <li class="font-semibold">Data Import:
+                                        <ul class="list-disc list-inside ml-6 mt-2 font-normal">
+                                            <li>Imported two CSV files: Orders Table and Order Details Table using Power BI's Get Data feature.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="font-semibold">Data Cleaning and Transformation:
+                                        <ul class="list-disc list-inside ml-6 mt-2 font-normal">
+                                            <li>Used Power Query to clean and transform the data:</li>
+                                            <li class="ml-6">Changed data types (e.g., text to date).</li>
+                                            <li class="ml-6">Removed unnecessary columns.</li>
+                                            <li class="ml-6">Split columns for better organization.</li>
+                                            <li class="ml-6">Removed duplicates.</li>
+                                            <li class="ml-6">Created custom columns (e.g., AOV).</li>
+                                            <li class="ml-6">Aggregated data using Group By.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="font-semibold">Data Modeling:
+                                        <ul class="list-disc list-inside ml-6 mt-2 font-normal">
+                                            <li>Established relationships between the Orders Table and Order Details Table in the Model View.</li>
+                                            <li>Defined cardinality as One-to-Many.</li>
+                                            <li>Ensured active relationships for seamless data integration.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="font-semibold">Dashboard Creation:
+                                        <ul class="list-disc list-inside ml-6 mt-2 font-normal">
+                                            <li>Designed visualizations such as column charts, pie charts, and bar charts.</li>
+                                            <li>Added interactive slicers for quarters and states.</li>
+                                            <li>Applied conditional formatting for better data interpretation.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="font-semibold">Custom Calculations:
+                                        <ul class="list-disc list-inside ml-6 mt-2 font-normal">
+                                            <li>Used DAX (Data Analysis Expressions) to create calculated columns and measures, such as AOV.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="font-semibold">Formatting and Customization:
+                                        <ul class="list-disc list-inside ml-6 mt-2 font-normal">
+                                            <li>Used the Format Painter to maintain consistency across visualizations.</li>
+                                            <li>Added a canvas background image and adjusted transparency for a polished look.</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </div>
                         </div>
 
                         <div>
-                            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Impact</h2>
-                            <p class="text-gray-600">This dashboard has helped increase sales efficiency by 25% through better decision-making and resource allocation.</p>
+                            <h2 class="text-2xl font-semibold text-gray-900 mb-4">4. Skills Demonstrated</h2>
+                            <div class="text-gray-600 space-y-4">
+                                <ol class="list-decimal list-inside space-y-4">
+                                    <li class="font-semibold">Data Visualization:
+                                        <ul class="list-disc list-inside ml-6 mt-2 font-normal">
+                                            <li>Expertise in creating clear, insightful, and interactive visualizations using Power BI.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="font-semibold">Power Query Proficiency:
+                                        <ul class="list-disc list-inside ml-6 mt-2 font-normal">
+                                            <li>Advanced data cleaning, transformation, and preparation using Power Query.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="font-semibold">Data Modeling:
+                                        <ul class="list-disc list-inside ml-6 mt-2 font-normal">
+                                            <li>Designing and managing relationships between tables, defining cardinality, and optimizing data integration.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="font-semibold">Dashboard Design:
+                                        <ul class="list-disc list-inside ml-6 mt-2 font-normal">
+                                            <li>Developing user-friendly, interactive dashboards with slicers and filters.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="font-semibold">DAX Formulas:
+                                        <ul class="list-disc list-inside ml-6 mt-2 font-normal">
+                                            <li>Writing custom DAX queries for calculated fields and measures.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="font-semibold">Chart Customization:
+                                        <ul class="list-disc list-inside ml-6 mt-2 font-normal">
+                                            <li>Formatting and designing charts for readability and aesthetic appeal.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="font-semibold">Analytical Thinking:
+                                        <ul class="list-disc list-inside ml-6 mt-2 font-normal">
+                                            <li>Interpreting data trends and presenting actionable insights.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="font-semibold">Attention to Detail:
+                                        <ul class="list-disc list-inside ml-6 mt-2 font-normal">
+                                            <li>Ensuring consistency in design, formatting, and data accuracy.</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-2xl font-semibold text-gray-900 mb-4">5. Impact</h2>
+                            <div class="text-gray-600 space-y-4">
+                                <ol class="list-decimal list-inside space-y-4">
+                                    <li class="font-semibold">Improved Decision-Making:
+                                        <ul class="list-disc list-inside ml-6 mt-2 font-normal">
+                                            <li>The dashboard provides Compsee Ecommerce with actionable insights into sales performance, enabling data-driven decisions.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="font-semibold">Time Efficiency:
+                                        <ul class="list-disc list-inside ml-6 mt-2 font-normal">
+                                            <li>The interactive filters and slicers allow users to explore data dynamically, reducing the time needed for manual analysis.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="font-semibold">Enhanced Data Visibility:
+                                        <ul class="list-disc list-inside ml-6 mt-2 font-normal">
+                                            <li>Key metrics such as Total Amount, Quantity, Profit, and AOV are displayed prominently, making it easy to monitor performance.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="font-semibold">Professional Presentation:
+                                        <ul class="list-disc list-inside ml-6 mt-2 font-normal">
+                                            <li>The polished and cohesive design of the dashboard enhances the company's ability to present data to stakeholders in a professional manner.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="font-semibold">Scalability:
+                                        <ul class="list-disc list-inside ml-6 mt-2 font-normal">
+                                            <li>The dashboard is designed to handle large datasets and can be easily updated with new data, making it scalable for future growth.</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </div>
                         </div>
                     </section>
                 </div>
