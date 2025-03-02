@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Muhammad Hassan Tahir</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#4f46e5',
+                        accent: '#06b6d4',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-primary">Data Portfolio</a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link font-medium">Home</a>
+                    <a href="about.html" class="nav-link font-medium">About Me</a>
+                    <a href="portfolio.html" class="nav-link font-medium">My Portfolio</a>
+                    <a href="resume.html" class="nav-link font-medium text-primary">Resume</a>
+                    <a href="index.html#contact" class="btn btn-primary">Contact Me</a>
+                </div>
+                <button class="md:hidden text-gray-600 hover:text-primary">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="flex justify-between items-center mb-8">
+                    <h1 class="text-4xl font-bold text-gray-900">Resume</h1>
+                    <a href="assets/resume.pdf" download class="btn btn-primary">
+                        <i class="fas fa-download mr-2"></i>
+                        Download PDF
+                    </a>
+                </div>
+
+                <!-- Profile Section -->
+                <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                    <h2 class="text-2xl font-semibold text-gray-900 mb-4">Muhammad Hassan Tahir</h2>
+                    <p class="text-lg text-gray-600 mb-4">Power BI Specialist & Data Analyst</p>
+                    <div class="flex flex-wrap gap-4 text-gray-600">
+                        <span class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-primary"></i>
+                            hassan.tahir@hotmail.com
+                        </span>
+                        <span class="flex items-center">
+                            <i class="fas fa-phone mr-2 text-primary"></i>
+                            +92-323-4677308
+                        </span>
+                        <span class="flex items-center">
+                            <i class="fab fa-linkedin mr-2 text-primary"></i>
+                            linkedin.com/in/mhassantahir1987
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Experience Section -->
+                <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                    <h2 class="text-2xl font-semibold text-gray-900 mb-6">Professional Experience</h2>
+                    
+                    <div class="mb-8">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold text-gray-800">Planning Officer</h3>
+                            <span class="text-gray-600">2019 - Present</span>
+                        </div>
+                        <p class="text-gray-600 mb-2">Primary & Secondary Healthcare Department, Government of Punjab</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Led data analysis initiatives for healthcare metrics and KPIs</li>
+                            <li>Developed comprehensive Power BI dashboards for monitoring department performance</li>
+                            <li>Implemented data-driven decision-making processes</li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-8">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold text-gray-800">Financial Investment Analyst</h3>
+                            <span class="text-gray-600">2017 - 2019</span>
+                        </div>
+                        <p class="text-gray-600 mb-2">Blue River Financials</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Conducted financial analysis and market research</li>
+                            <li>Created investment portfolio analysis reports</li>
+                            <li>Developed financial models and forecasts</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Education Section -->
+                <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                    <h2 class="text-2xl font-semibold text-gray-900 mb-6">Education</h2>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold text-gray-800">MS Economics</h3>
+                            <span class="text-gray-600">2016 - 2018</span>
+                        </div>
+                        <p class="text-gray-600">University of Central Punjab</p>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold text-gray-800">B.Sc. (Hons) Economics and Finance</h3>
+                            <span class="text-gray-600">2012 - 2016</span>
+                        </div>
+                        <p class="text-gray-600">Lahore School of Economics</p>
+                    </div>
+                </div>
+
+                <!-- Skills Section -->
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h2 class="text-2xl font-semibold text-gray-900 mb-6">Skills & Expertise</h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-4">Technical Skills</h3>
+                            <div class="space-y-3">
+                                <div>
+                                    <div class="flex justify-between mb-1">
+                                        <span class="text-gray-700">Power BI</span>
+                                        <span class="text-gray-600">Expert</span>
+                                    </div>
+                                    <div class="h-2 bg-gray-200 rounded-full">
+                                        <div class="h-2 bg-primary rounded-full" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-1">
+                                        <span class="text-gray-700">SQL</span>
+                                        <span class="text-gray-600">Advanced</span>
+                                    </div>
+                                    <div class="h-2 bg-gray-200 rounded-full">
+                                        <div class="h-2 bg-primary rounded-full" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-1">
+                                        <span class="text-gray-700">Python</span>
+                                        <span class="text-gray-600">Intermediate</span>
+                                    </div>
+                                    <div class="h-2 bg-gray-200 rounded-full">
+                                        <div class="h-2 bg-primary rounded-full" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-4">Domain Knowledge</h3>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle text-primary mr-2"></i>
+                                    Healthcare Analytics
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle text-primary mr-2"></i>
+                                    Financial Analysis
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle text-primary mr-2"></i>
+                                    Business Intelligence
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle text-primary mr-2"></i>
+                                    Project Management
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex space-x-6 mb-4 md:mb-0">
+                    <a href="https://github.com/m-hassantahir" target="_blank" class="social-link text-2xl">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mhassantahir1987/" target="_blank" class="social-link text-2xl">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:hassan.tahir@hotmail.com" class="social-link text-2xl">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <p class="text-gray-600">&copy; 2025 - All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu -->
+    <div class="hidden fixed inset-0 bg-gray-800 bg-opacity-50 z-50" id="mobile-menu">
+        <div class="bg-white h-full w-64 p-6">
+            <div class="flex justify-between items-center mb-8">
+                <span class="text-xl font-bold text-primary">Menu</span>
+                <button class="text-gray-600 hover:text-primary" onclick="toggleMobileMenu()">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+            </div>
+            <nav class="flex flex-col space-y-4">
+                <a href="index.html" class="nav-link font-medium">Home</a>
+                <a href="about.html" class="nav-link font-medium">About Me</a>
+                <a href="portfolio.html" class="nav-link font-medium">My Portfolio</a>
+                <a href="resume.html" class="nav-link font-medium text-primary">Resume</a>
+                <a href="index.html#contact" class="btn btn-primary mt-4">Contact Me</a>
+            </nav>
+        </div>
+    </div>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        document.querySelector('.md\\:hidden').addEventListener('click', toggleMobileMenu);
+    </script>
+</body>
+</html>

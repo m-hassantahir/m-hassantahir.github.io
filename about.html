@@ -3,79 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Data Analyst & Power BI Specialist</title>
+    <title>About Me - Muhammad Hassan Tahir</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#4f46e5',
+                        accent: '#06b6d4',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="nav-brand">Data Portfolio</a>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html" class="active">About Me</a>
-                <a href="portfolio.html">My Portfolio</a>
-                <a href="index.html#contact" class="contact-btn">Contact Me</a>
+<body class="bg-gray-50 font-sans">
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-primary">Data Portfolio</a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link font-medium">Home</a>
+                    <a href="about.html" class="nav-link font-medium text-primary">About Me</a>
+                    <a href="portfolio.html" class="nav-link font-medium">My Portfolio</a>
+                    <a href="resume.html" class="nav-link font-medium">Resume</a>
+                    <a href="index.html#contact" class="btn btn-primary">Contact Me</a>
+                </div>
+                <button class="md:hidden text-gray-600 hover:text-primary">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
             </div>
         </div>
     </nav>
 
-    <section class="about-section">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="assets/images/profile.jpg" alt="Your Name">
-                </div>
-                <div class="about-text">
-                    <h1>About Me</h1>
-                    <p class="lead">Data Analyst & Power BI Specialist with a passion for transforming complex data into actionable insights.</p>
-                    
-                    <h2>My Expertise</h2>
-                    <div class="skills-grid">
-                        <div class="skill-card">
-                            <i class="fas fa-chart-bar"></i>
-                            <h3>Data Analysis</h3>
-                            <p>Advanced analytics using Python, SQL, and statistical methods</p>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fas fa-desktop"></i>
-                            <h3>Power BI</h3>
-                            <p>Creating interactive dashboards and reports</p>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fas fa-database"></i>
-                            <h3>Data Management</h3>
-                            <p>Database design and ETL processes</p>
+    <section class="pt-32 pb-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-4xl font-bold text-gray-900 mb-8">About Me</h1>
+                
+                <div class="prose prose-lg max-w-none">
+                    <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                        <h2 class="text-2xl font-semibold text-gray-900 mb-4">My Journey</h2>
+                        <p class="text-gray-600 mb-6">
+                            With over 8 years of experience in data analysis and business intelligence, I've developed a passion for transforming complex data into actionable insights. My journey began in healthcare analytics and has evolved to encompass various industries, allowing me to develop a versatile skill set in data visualization and analysis.
+                        </p>
+                        <p class="text-gray-600">
+                            As a Power BI Specialist, I've had the opportunity to work with diverse organizations, helping them leverage data to make informed decisions and drive business growth.
+                        </p>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                        <h2 class="text-2xl font-semibold text-gray-900 mb-4">Expertise</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">Technical Skills</h3>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check-circle text-primary mr-2"></i>
+                                        Power BI Development & Administration
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check-circle text-primary mr-2"></i>
+                                        SQL & Database Management
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check-circle text-primary mr-2"></i>
+                                        Data Analysis & Visualization
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check-circle text-primary mr-2"></i>
+                                        Python for Data Analysis
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">Domain Knowledge</h3>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check-circle text-primary mr-2"></i>
+                                        Healthcare Analytics
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check-circle text-primary mr-2"></i>
+                                        Financial Analysis
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check-circle text-primary mr-2"></i>
+                                        Business Intelligence
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check-circle text-primary mr-2"></i>
+                                        Project Management
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="experience">
-                        <h2>Experience</h2>
-                        <div class="experience-item">
-                            <h3>Senior Data Analyst</h3>
-                            <p>Company Name • 2023 - Present</p>
-                        </div>
-                        <div class="experience-item">
-                            <h3>Data Analyst</h3>
-                            <p>Previous Company • 2020 - 2023</p>
-                        </div>
+                    <div class="bg-white rounded-xl shadow-lg p-8">
+                        <h2 class="text-2xl font-semibold text-gray-900 mb-4">Professional Philosophy</h2>
+                        <p class="text-gray-600 mb-6">
+                            I believe in the power of data to drive meaningful change and innovation. My approach combines technical expertise with strategic thinking to deliver solutions that not only answer immediate questions but also provide long-term value for organizations.
+                        </p>
+                        <p class="text-gray-600">
+                            I'm passionate about continuous learning and staying updated with the latest trends in data analytics and visualization. This commitment helps me deliver cutting-edge solutions that give organizations a competitive edge in their decision-making processes.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="social-links">
-                    <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://yourpersonalsite.com" target="_blank"><i class="fas fa-globe"></i></a>
+    <footer class="bg-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex space-x-6 mb-4 md:mb-0">
+                    <a href="https://github.com/m-hassantahir" target="_blank" class="social-link text-2xl">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mhassantahir1987/" target="_blank" class="social-link text-2xl">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:hassan.tahir@hotmail.com" class="social-link text-2xl">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                 </div>
-                <p>&copy; 2025 - All rights reserved</p>
+                <p class="text-gray-600">&copy; 2025 - All rights reserved</p>
             </div>
         </div>
     </footer>
+
+    <!-- Mobile Menu -->
+    <div class="hidden fixed inset-0 bg-gray-800 bg-opacity-50 z-50" id="mobile-menu">
+        <div class="bg-white h-full w-64 p-6">
+            <div class="flex justify-between items-center mb-8">
+                <span class="text-xl font-bold text-primary">Menu</span>
+                <button class="text-gray-600 hover:text-primary" onclick="toggleMobileMenu()">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+            </div>
+            <nav class="flex flex-col space-y-4">
+                <a href="index.html" class="nav-link font-medium">Home</a>
+                <a href="about.html" class="nav-link font-medium text-primary">About Me</a>
+                <a href="portfolio.html" class="nav-link font-medium">My Portfolio</a>
+                <a href="resume.html" class="nav-link font-medium">Resume</a>
+                <a href="index.html#contact" class="btn btn-primary mt-4">Contact Me</a>
+            </nav>
+        </div>
+    </div>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        document.querySelector('.md\\:hidden').addEventListener('click', toggleMobileMenu);
+    </script>
 </body>
 </html>

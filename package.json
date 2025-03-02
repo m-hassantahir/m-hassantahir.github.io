@@ -1,0 +1,11 @@
+{
+  "name": "data-portfolio",
+  "version": "1.0.0",
+  "description": "Data Analyst Portfolio Website",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./assets/css/style.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}

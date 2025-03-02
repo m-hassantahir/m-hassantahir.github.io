@@ -3,72 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio - Data Analyst & Power BI Specialist</title>
+    <title>Portfolio - Muhammad Hassan Tahir</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#4f46e5',
+                        accent: '#06b6d4',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="nav-brand">Data Portfolio</a>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Me</a>
-                <a href="portfolio.html" class="active">My Portfolio</a>
-                <a href="index.html#contact" class="contact-btn">Contact Me</a>
+<body class="bg-gray-50 font-sans">
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-primary">Data Portfolio</a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link font-medium">Home</a>
+                    <a href="about.html" class="nav-link font-medium">About Me</a>
+                    <a href="portfolio.html" class="nav-link font-medium text-primary">My Portfolio</a>
+                    <a href="resume.html" class="nav-link font-medium">Resume</a>
+                    <a href="index.html#contact" class="btn btn-primary">Contact Me</a>
+                </div>
+                <button class="md:hidden text-gray-600 hover:text-primary">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
             </div>
         </div>
     </nav>
 
-    <section class="portfolio-header">
-        <div class="container">
-            <h1>My Portfolio</h1>
-            <p>Explore my data analysis and Power BI projects</p>
-        </div>
-    </section>
+    <section class="pt-32 pb-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h1 class="text-4xl font-bold text-gray-900 mb-8 text-center">My Portfolio</h1>
+                <p class="text-xl text-gray-600 text-center mb-12">Explore my data analysis and Power BI projects</p>
 
-    <section class="portfolio-grid">
-        <div class="container">
-            <div class="projects-filter">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="powerbi">Power BI</button>
-                <button class="filter-btn" data-filter="analysis">Data Analysis</button>
-                <button class="filter-btn" data-filter="visualization">Data Visualization</button>
-            </div>
-
-            <div class="projects-grid">
-                <!-- Project cards will be dynamically populated -->
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="social-links">
-                    <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://yourpersonalsite.com" target="_blank"><i class="fas fa-globe"></i></a>
+                <div class="flex flex-wrap justify-center gap-4 mb-12">
+                    <button class="filter-btn active px-6 py-2 rounded-full font-medium transition-all duration-300 bg-primary text-white hover:bg-primary/90" data-filter="all">
+                        <i class="fas fa-th-large mr-2"></i>All Projects
+                    </button>
+                    <button class="filter-btn px-6 py-2 rounded-full font-medium transition-all duration-300 bg-gray-200 text-gray-700 hover:bg-gray-300" data-filter="powerbi">
+                        <i class="fas fa-chart-bar mr-2"></i>Power BI
+                    </button>
+                    <button class="filter-btn px-6 py-2 rounded-full font-medium transition-all duration-300 bg-gray-200 text-gray-700 hover:bg-gray-300" data-filter="analysis">
+                        <i class="fas fa-analytics mr-2"></i>Data Analysis
+                    </button>
+                    <button class="filter-btn px-6 py-2 rounded-full font-medium transition-all duration-300 bg-gray-200 text-gray-700 hover:bg-gray-300" data-filter="visualization">
+                        <i class="fas fa-chart-line mr-2"></i>Data Visualization
+                    </button>
                 </div>
-                <p>&copy; 2025 - All rights reserved</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Sales Analysis Project -->
+                    <a href="projects/sales-analysis.html" class="project-card group" data-categories="powerbi,analysis">
+                        <div class="relative overflow-hidden aspect-video">
+                            <img src="assets/images/projects/project1_compsee.png" alt="Sales Dashboard" 
+                                 class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-3 text-gray-900">Sales Performance Dashboard</h3>
+                            <p class="text-gray-600 mb-4">Interactive Power BI dashboard analyzing sales performance across regions with real-time tracking and year-over-year comparisons.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="project-tag">Power BI</span>
+                                <span class="project-tag">Data Analysis</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Work Hour Analysis Project -->
+                    <a href="projects/work_hour_analysis.html" class="project-card group" data-categories="powerbi,visualization">
+                        <div class="relative overflow-hidden aspect-video">
+                            <img src="assets/images/projects/project2_wrc.png" alt="work_hour_analysis" 
+                                 class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-3 text-gray-900">Healthcare Department Analytics</h3>
+                            <p class="text-gray-600 mb-4">Comprehensive analysis of work hours used in the department.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="project-tag">Power BI</span>
+                                <span class="project-tag">Data Visualization</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Toy Store Performance Analysis -->
+                    <a href="projects/toy_store_analysis.html" class="project-card group" data-categories="analysis,visualization">
+                        <div class="relative overflow-hidden aspect-video">
+                            <img src="assets/images/projects/project3_toystore.png" alt="Toy Store Performance Analysis" 
+                                 class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-3 text-gray-900">Toy Store Performance Analysis</h3>
+                            <p class="text-gray-600 mb-4">Analyzing toy store performance metrics to optimize inventory management.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="project-tag">Data Analysis</span>
+                                <span class="project-tag">Data Visualization</span>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex space-x-6 mb-4 md:mb-0">
+                    <a href="https://github.com/m-hassantahir" target="_blank" class="social-link text-2xl">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mhassantahir1987/" target="_blank" class="social-link text-2xl">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:hassan.tahir@hotmail.com" class="social-link text-2xl">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <p class="text-gray-600">&copy; 2025 - All rights reserved</p>
             </div>
         </div>
     </footer>
 
+    <!-- Mobile Menu -->
+    <div class="hidden fixed inset-0 bg-gray-800 bg-opacity-50 z-50" id="mobile-menu">
+        <div class="bg-white h-full w-64 p-6">
+            <div class="flex justify-between items-center mb-8">
+                <span class="text-xl font-bold text-primary">Menu</span>
+                <button class="text-gray-600 hover:text-primary" onclick="toggleMobileMenu()">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+            </div>
+            <nav class="flex flex-col space-y-4">
+                <a href="index.html" class="nav-link font-medium">Home</a>
+                <a href="about.html" class="nav-link font-medium">About Me</a>
+                <a href="portfolio.html" class="nav-link font-medium text-primary">My Portfolio</a>
+                <a href="resume.html" class="nav-link font-medium">Resume</a>
+                <a href="index.html#contact" class="btn btn-primary mt-4">Contact Me</a>
+            </nav>
+        </div>
+    </div>
+
     <script>
-        // Simple filtering functionality
-        document.querySelectorAll('.filter-btn').forEach(button => {
-            button.addEventListener('click', () => {
-                // Remove active class from all buttons
-                document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-                // Add active class to clicked button
-                button.classList.add('active');
-                
-                // Filter logic would go here
-                const filter = button.getAttribute('data-filter');
-                // You would then show/hide projects based on the filter
+        document.addEventListener('DOMContentLoaded', function() {
+            const allfilterButton = document.querySelector('.filter-btn, .active');
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Update button styles
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('bg-primary', 'text-white');
+                        btn.classList.add('bg-gray-200', 'text-gray-700');
+                    });
+                    button.classList.remove('bg-gray-200', 'text-gray-700');
+                    button.classList.add('bg-primary', 'text-white');
+
+                    const filter = button.getAttribute('data-filter');
+
+                    projectCards.forEach(card => {
+                        const categories = card.getAttribute('data-categories').split(',');
+                        
+                        if (filter === 'all') {
+                            card.style.display = 'block';
+                            setTimeout(() => card.classList.add('visible'), 10);
+                        } else if (categories.includes(filter)) {
+                            card.style.display = 'block';
+                            setTimeout(() => card.classList.add('visible'), 10);
+                        } else {
+                            card.classList.remove('visible');
+                            setTimeout(() => card.style.display = 'none', 300);
+                        }
+                    });
+                });
             });
+
+            allfilterButton.click();
         });
+
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        document.querySelector('.md\\:hidden').addEventListener('click', toggleMobileMenu);
     </script>
 </body>
 </html>

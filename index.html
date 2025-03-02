@@ -3,81 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Analyst & Power BI Specialist</title>
+    <title>Muhammad Hassan Tahir - Data Analyst & Power BI Specialist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#4f46e5',
+                        accent: '#06b6d4',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="nav-brand">Data Portfolio</a>
-            <div class="nav-links">
-                <a href="index.html" class="active">Home</a>
-                <a href="about.html">About Me</a>
-                <a href="portfolio.html">My Portfolio</a>
-                <a href="#contact" class="contact-btn">Contact Me</a>
+<body class="bg-gray-50 font-sans">
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-primary">Data Portfolio</a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link font-medium text-primary">Home</a>
+                    <a href="about.html" class="nav-link font-medium">About Me</a>
+                    <a href="portfolio.html" class="nav-link font-medium">My Portfolio</a>
+                    <a href="resume.html" class="nav-link font-medium">Resume</a>
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                </div>
+                <button class="md:hidden text-gray-600 hover:text-primary">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
             </div>
         </div>
     </nav>
 
-    <section class="hero">
-        <div class="container">
-            <h1>Data Analysis & Power BI Specialist</h1>
-            <p>Transforming complex data into actionable insights</p>
-            <div class="hero-cta">
-                <a href="portfolio.html" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="featured-work">
-        <div class="container">
-            <h2>Featured Projects</h2>
-            <div class="projects-grid">
-                <!-- Featured projects will be populated by Jekyll -->
-            </div>
-            <div class="center-btn">
-                <a href="portfolio.html" class="btn btn-primary">View All Projects</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Let's Connect</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="social-links">
-                        <a href="https://github.com/m-hassantahir" target="_blank" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://linkedin.com/in/mhassantahir1987" target="_blank" class="social-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://m-hassantahir.github.io" target="_blank" class="social-link">
-                            <i class="fas fa-globe"></i>
-                        </a>
-                    </div>
-                    <a href="mailto:your.email@example.com" class="btn btn-primary">
-                        <i class="fas fa-envelope"></i> Email Me
+    <section class="pt-32 pb-20 bg-gradient-to-r from-primary to-secondary">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center text-white">
+                <h1 class="text-5xl font-bold mb-6">Muhammad Hassan Tahir</h1>
+                <h2 class="text-2xl mb-8 opacity-90">Power BI Specialist & Data Analyst</h2>
+                <p class="text-xl mb-12 opacity-80">Transforming data into actionable insights through powerful visualizations and analysis</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="portfolio.html" class="btn btn-primary bg-white text-primary hover:bg-gray-100">
+                        <i class="fas fa-project-diagram"></i>
+                        View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-outline border-white text-white hover:bg-white hover:text-primary">
+                        <i class="fas fa-envelope"></i>
+                        Get in Touch
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="social-links">
-                    <a href="https://github.com/m-hassantahir" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://yourpersonalsite.com" target="_blank"><i class="fas fa-globe"></i></a>
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <a href="projects/sales-analysis.html" class="project-card bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <div class="relative overflow-hidden aspect-video">
+                        <img src="assets/images/projects/project1_compsee.png" alt="Sales Dashboard" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-900">Sales Performance Dashboard</h3>
+                        <p class="text-gray-600 mb-4">Interactive Power BI dashboard analyzing sales performance across regions with real-time tracking and year-over-year comparisons.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="project-tag bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Power BI</span>
+                            <span class="project-tag bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Data Analysis</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="projects/work_hour_analysis.html" class="project-card bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <div class="relative overflow-hidden aspect-video">
+                        <img src="assets/images/projects/project2_wrc.png" alt="Work Hour Analysis" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-900">Work Hour Analysis</h3>
+                        <p class="text-gray-600 mb-4">Comprehensive analysis of healthcare metrics and KPIs for the Primary & Secondary Healthcare Department.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="project-tag bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Power BI</span>
+                            <span class="project-tag bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Data Visualization</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="projects/toy_store_analysis.html" class="project-card bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <div class="relative overflow-hidden aspect-video">
+                        <img src="assets/images/projects/project3_toystore.png" alt="Toy Store Performance Analysis" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-900">Toy Store Performance Analysis</h3>
+                        <p class="text-gray-600 mb-4">In-depth financial analysis and forecasting using advanced data visualization techniques.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="project-tag bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Financial Analysis</span>
+                            <span class="project-tag bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Data Visualization</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="text-center mt-12">
+                <a href="portfolio.html" class="btn btn-outline">
+                    <i class="fas fa-arrow-right"></i>
+                    View All Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Get in Touch</h2>
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-white rounded-xl shadow-lg">
+                    <i class="fas fa-envelope text-3xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Email</h3>
+                    <a href="mailto:hassan.tahir@hotmail.com" class="text-gray-600 hover:text-primary transition-colors">hassan.tahir@hotmail.com</a>
                 </div>
-                <p>&copy; 2025 - All rights reserved</p>
+                <div class="text-center p-6 bg-white rounded-xl shadow-lg">
+                    <i class="fas fa-phone text-3xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Phone</h3>
+                    <a href="tel:+923234677308" class="text-gray-600 hover:text-primary transition-colors">+92-323-4677308</a>
+                </div>
+                <div class="text-center p-6 bg-white rounded-xl shadow-lg">
+                    <i class="fab fa-linkedin text-3xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/mhassantahir1987/" target="_blank" class="text-gray-600 hover:text-primary transition-colors">Connect on LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex space-x-6 mb-4 md:mb-0">
+                    <a href="https://github.com/m-hassantahir" target="_blank" class="social-link text-2xl">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mhassantahir1987/" target="_blank" class="social-link text-2xl">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:hassan.tahir@hotmail.com" class="social-link text-2xl">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <p class="text-gray-600">&copy; 2025 - All rights reserved</p>
             </div>
         </div>
     </footer>
+
+    <!-- Mobile Menu -->
+    <div class="hidden fixed inset-0 bg-gray-800 bg-opacity-50 z-50" id="mobile-menu">
+        <div class="bg-white h-full w-64 p-6">
+            <div class="flex justify-between items-center mb-8">
+                <span class="text-xl font-bold text-primary">Menu</span>
+                <button class="text-gray-600 hover:text-primary" onclick="toggleMobileMenu()">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+            </div>
+            <nav class="flex flex-col space-y-4">
+                <a href="index.html" class="nav-link font-medium text-primary">Home</a>
+                <a href="about.html" class="nav-link font-medium">About Me</a>
+                <a href="portfolio.html" class="nav-link font-medium">My Portfolio</a>
+                <a href="resume.html" class="nav-link font-medium">Resume</a>
+                <a href="#contact" class="btn btn-primary mt-4">Contact Me</a>
+            </nav>
+        </div>
+    </div>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        document.querySelector('.md\\:hidden').addEventListener('click', toggleMobileMenu);
+    </script>
 </body>
 </html>
