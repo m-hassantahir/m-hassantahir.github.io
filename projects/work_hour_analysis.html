@@ -3,79 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sales Performance Dashboard - Data Analysis Portfolio</title>
+    <title>Work Hour Analysis - Data Analysis Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#4f46e5',
+                        accent: '#06b6d4',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    <nav class="navbar">
-        <div class="container">
-            <a href="../index.html" class="nav-brand">Data Portfolio</a>
-            <div class="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../about.html">About Me</a>
-                <a href="../portfolio.html">My Portfolio</a>
-                <a href="resume.html" class="nav-link font-medium">Resume</a>
-                <a href="../index.html#contact" class="contact-btn">Contact Me</a>
+<body class="bg-gray-50 font-sans">
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="../index.html" class="text-2xl font-bold text-primary">Data Analysis Portfolio</a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../index.html" class="nav-link font-medium">Home</a>
+                    <a href="../about.html" class="nav-link font-medium">About Me</a>
+                    <a href="../portfolio.html" class="nav-link font-medium">My Portfolio</a>
+                    <a href="../resume.html" class="nav-link font-medium">Resume</a>
+                    <a href="../index.html#contact" class="btn btn-primary">Contact Me</a>
+                </div>
+                <button class="md:hidden text-gray-600 hover:text-primary">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
             </div>
         </div>
     </nav>
 
-    <article class="project-detail">
-        <div class="container">
-            <header class="project-header">
-                <h1>Work Hour Analysis Dashboard</h1>
-                <p class="project-meta">February 15, 2025</p>
+    <article class="pt-32 pb-20">
+        <div class="container mx-auto px-4">
+            <header class="max-w-3xl mx-auto mb-12">
+                <h1 class="text-4xl font-bold text-gray-900 mb-4">Work Hour Analysis Dashboard</h1>
+                <p class="text-gray-600">February 15, 2025</p>
             </header>
 
-            <div class="project-content">
-                <div class="powerbi-container">
-                    <iframe title="Work Hour Analysis Dashboard" width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiZDQxMTc1NDItZjU4OC00ODAxLWFhMTUtZTUwZTA1Mjk5NThkIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9" frameborder="0" allowFullScreen="true"></iframe>
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="p-8">
+                    <div class="powerbi-container mb-12">
+                        <iframe title="Work Hour Analysis Dashboard" width="100%" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiZDQxMTc1NDItZjU4OC00ODAxLWFhMTUtZTUwZTA1Mjk5NThkIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9" frameborder="0" allowFullScreen="true"></iframe>
+                    </div>
+
+                    <section class="space-y-8">
+                        <div>
+                            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Project Overview</h2>
+                            <p class="text-gray-600">This comprehensive dashboard analyzes healthcare metrics and KPIs for the Primary & Secondary Healthcare Department, focusing on work hour efficiency and resource allocation.</p>
+                        </div>
+
+                        <div>
+                            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Key Features</h2>
+                            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                <li>Staff attendance and work hour tracking</li>
+                                <li>Department-wise performance metrics</li>
+                                <li>Resource utilization analysis</li>
+                                <li>Overtime and efficiency tracking</li>
+                                <li>Healthcare KPI monitoring</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Technical Details</h2>
+                            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                <li>Data Sources: SQL Server, Excel files</li>
+                                <li>ETL Process: Power Query</li>
+                                <li>Visualization: Power BI</li>
+                                <li>Refresh Rate: Daily</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Impact</h2>
+                            <p class="text-gray-600">Implementation of this dashboard has led to a 30% improvement in resource allocation and significant reduction in overtime costs.</p>
+                        </div>
+                    </section>
                 </div>
-
-                <section class="project-description">
-                    <h2>Project Overview</h2>
-                    <p>This interactive Power BI dashboard provides a comprehensive analysis of our sales performance across different regions. The dashboard combines data from multiple sources to create actionable insights for stakeholders.</p>
-
-                    <h2>Key Features</h2>
-                    <ul>
-                        <li>Real-time sales tracking by region</li>
-                        <li>Product performance analysis</li>
-                        <li>Customer segmentation insights</li>
-                        <li>Year-over-year comparison</li>
-                        <li>Profit margin analysis</li>
-                    </ul>
-
-                    <h2>Technical Details</h2>
-                    <ul>
-                        <li>Data Sources: SQL Server, Excel files</li>
-                        <li>ETL Process: Power Query</li>
-                        <li>Visualization: Power BI</li>
-                        <li>Refresh Rate: Daily</li>
-                    </ul>
-
-                    <h2>Impact</h2>
-                    <p>This dashboard has helped increase sales efficiency by 25% through better decision-making and resource allocation.</p>
-                </section>
             </div>
 
-            <div class="project-navigation">
+            <div class="max-w-4xl mx-auto mt-8 text-center">
                 <a href="../portfolio.html" class="btn btn-primary">
-                    <i class="fas fa-arrow-left"></i> Back to Portfolio
+                    <i class="fas fa-arrow-left mr-2"></i> Back to Portfolio
                 </a>
             </div>
         </div>
     </article>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="social-links">
-                    <a href="https://github.com/m-hassantahir" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://yourpersonalsite.com" target="_blank"><i class="fas fa-globe"></i></a>
+    <footer class="bg-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex space-x-6 mb-4 md:mb-0">
+                    <a href="https://github.com/m-hassantahir" target="_blank" class="social-link text-2xl">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mhassantahir1987/" target="_blank" class="social-link text-2xl">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:hassan.tahir@hotmail.com" class="social-link text-2xl">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                 </div>
-                <p>&copy; 2025 - All rights reserved</p>
+                <p class="text-gray-600">&copy; 2025 - All rights reserved</p>
             </div>
         </div>
     </footer>
